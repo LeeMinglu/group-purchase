@@ -13,6 +13,8 @@
 		1AFBE37D1BFE84AD00512116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBE37B1BFE84AD00512116 /* Main.storyboard */; };
 		1AFBE37F1BFE84AD00512116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBE37E1BFE84AD00512116 /* Assets.xcassets */; };
 		1AFBE3821BFE84AD00512116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBE3801BFE84AD00512116 /* LaunchScreen.storyboard */; };
+		1AFBE38E1BFE874400512116 /* tgs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBE38D1BFE874400512116 /* tgs.plist */; };
+		1AFBE3911BFE87B800512116 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBE3901BFE87B800512116 /* Food.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		1AFBE37E1BFE84AD00512116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AFBE3811BFE84AD00512116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AFBE3831BFE84AD00512116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFBE38D1BFE874400512116 /* tgs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tgs.plist; sourceTree = "<group>"; };
+		1AFBE38F1BFE87B800512116 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		1AFBE3901BFE87B800512116 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,8 @@
 		1AFBE3891BFE863500512116 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1AFBE38F1BFE87B800512116 /* Food.h */,
+				1AFBE3901BFE87B800512116 /* Food.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 			children = (
 				1AFBE37E1BFE84AD00512116 /* Assets.xcassets */,
 				1AFBE3801BFE84AD00512116 /* LaunchScreen.storyboard */,
+				1AFBE38D1BFE874400512116 /* tgs.plist */,
 				1AFBE3751BFE84AD00512116 /* AppDelegate.h */,
 				1AFBE3761BFE84AD00512116 /* AppDelegate.m */,
 			);
@@ -170,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AFBE3821BFE84AD00512116 /* LaunchScreen.storyboard in Resources */,
+				1AFBE38E1BFE874400512116 /* tgs.plist in Resources */,
 				1AFBE37F1BFE84AD00512116 /* Assets.xcassets in Resources */,
 				1AFBE37D1BFE84AD00512116 /* Main.storyboard in Resources */,
 			);
@@ -183,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AFBE37A1BFE84AD00512116 /* ViewController.m in Sources */,
+				1AFBE3911BFE87B800512116 /* Food.m in Sources */,
 				1AFBE3771BFE84AD00512116 /* AppDelegate.m in Sources */,
 				1AFBE3741BFE84AD00512116 /* main.m in Sources */,
 			);
@@ -331,6 +341,7 @@
 				1AFBE3881BFE84AD00512116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
