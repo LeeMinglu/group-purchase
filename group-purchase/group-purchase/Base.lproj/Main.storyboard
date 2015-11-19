@@ -32,6 +32,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wTg-Up-8m4" secondAttribute="bottom" id="XFk-Vc-wZ2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodTableView" destination="wTg-Up-8m4" id="qCN-zc-hXQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
