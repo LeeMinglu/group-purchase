@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Food.h"
+#import "MLFoodCell.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *foods;
@@ -36,22 +37,16 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
     //取出模型
     Food *food = self.foods[indexPath.row];
     
     //创建cell
-    static NSString * const ID = @"food";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    MLFoodCell *cell = [MLFoodCell foodCellWithTableView:tableView]
+    ;
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
-    
-    //为cell赋值
-    cell.imageView.image = [UIImage imageNamed:food.icon];
-    cell.textLabel.text = food.title;
-    cell.detailTextLabel.text = food.buyCount;
+    //赋值
+    cell.food = food;
     
     return  cell;
 

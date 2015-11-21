@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Food;
 
 @interface MLFoodCell : UITableViewCell
+
+@property (nonatomic, strong) Food *food;
+
++ (instancetype)foodCellWithTableView:(UITableView *)tableView;
+
 
 @end
