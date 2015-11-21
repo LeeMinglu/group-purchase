@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MLFooterView;
+
+@protocol MLFooterViewDelegate <NSObject>
+
+- (void)footerViewDidClickLoadMoreBtn:(MLFooterView *)footerView;
+
+@end
 
 @interface MLFooterView : UIView
+
+@property (nonatomic, weak) id<MLFooterViewDelegate> delegate;
 
 + (instancetype)footerView;
 

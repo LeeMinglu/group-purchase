@@ -89,7 +89,7 @@
                 <outlet property="loadMore" destination="xtp-dk-pKw" id="8yq-m1-1cf"/>
                 <outlet property="loading" destination="g9e-RN-W6J" id="BaW-m7-EWL"/>
             </connections>
-            <point key="canvasLocation" x="640" y="261"/>
+            <point key="canvasLocation" x="587" y="242"/>
         </view>
     </objects>
 </document>

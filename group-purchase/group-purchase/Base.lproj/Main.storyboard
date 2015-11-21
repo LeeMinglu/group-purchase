@@ -33,7 +33,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="foodTableView" destination="wTg-Up-8m4" id="qCN-zc-hXQ"/>
+                        <outlet property="tableView" destination="wTg-Up-8m4" id="3y4-Kn-y7u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

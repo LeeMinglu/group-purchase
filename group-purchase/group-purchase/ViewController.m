@@ -11,10 +11,10 @@
 #import "MLFoodCell.h"
 #import "MLFooterView.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong) NSArray *foods;
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, MLFooterViewDelegate>
+@property (nonatomic, strong) NSMutableArray *foods;
 
-@property (weak, nonatomic) IBOutlet UITableView *foodTableView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -22,13 +22,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.foodTableView.delegate = self;
-    self.foodTableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
     MLFooterView *footerView = [MLFooterView footerView];
-    self.foodTableView.tableFooterView = footerView;
+    self.tableView.tableFooterView = footerView;
+    
+    footerView.delegate = self;
     
 }
+
+
+#pragma mark 实现footerView的代理方法
+
+- (void)footerViewDidClickLoadMoreBtn:(MLFooterView *)footerView {
+//    向模型中添加数据
+    Food *food = [[Food alloc] init];
+    food.title = @"味妙烤鱼吧";
+    food.price =@"32";
+    food.buyCount = @"98";
+    food.icon = @"37e4761e6ecf56a2d78685df7157f097";
+    
+    [self.foods addObject:food];
+    
+    
+//    刷新tableView
+    [self.tableView reloadData];
+    
+}
+
 
 
 #pragma mark 实现数据源方法
@@ -65,7 +87,7 @@
 
 
 #pragma mark --懒加载
-- (NSArray *)foods {
+- (NSMutableArray *)foods {
     if (_foods == nil) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"tgs.plist" ofType:nil];
         
@@ -78,7 +100,7 @@
             [arrayM addObject:food];
         }
         
-        _foods = [arrayM copy];
+        _foods = arrayM;
     }
     
     return _foods;
