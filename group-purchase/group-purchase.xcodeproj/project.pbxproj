@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0884361BFEA14400A7DF59 /* MLHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0884351BFEA14400A7DF59 /* MLHeaderView.m */; };
+		1A0884381BFEA16600A7DF59 /* MLHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0884371BFEA16600A7DF59 /* MLHeaderView.xib */; };
+		1A08843D1BFEA1BC00A7DF59 /* MLFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A08843C1BFEA1BC00A7DF59 /* MLFooterView.m */; };
+		1A08843F1BFEA1DD00A7DF59 /* MLFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A08843E1BFEA1DD00A7DF59 /* MLFooterView.xib */; };
 		1AFBE3741BFE84AD00512116 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBE3731BFE84AD00512116 /* main.m */; };
 		1AFBE3771BFE84AD00512116 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBE3761BFE84AD00512116 /* AppDelegate.m */; };
 		1AFBE37A1BFE84AD00512116 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBE3791BFE84AD00512116 /* ViewController.m */; };
@@ -15,9 +19,17 @@
 		1AFBE3821BFE84AD00512116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBE3801BFE84AD00512116 /* LaunchScreen.storyboard */; };
 		1AFBE38E1BFE874400512116 /* tgs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBE38D1BFE874400512116 /* tgs.plist */; };
 		1AFBE3911BFE87B800512116 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBE3901BFE87B800512116 /* Food.m */; };
+		1AFBE3951BFE931700512116 /* MLFoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBE3931BFE931700512116 /* MLFoodCell.m */; };
+		1AFBE3961BFE931700512116 /* MLFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBE3941BFE931700512116 /* MLFoodCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0884341BFEA14400A7DF59 /* MLHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLHeaderView.h; sourceTree = "<group>"; };
+		1A0884351BFEA14400A7DF59 /* MLHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLHeaderView.m; sourceTree = "<group>"; };
+		1A0884371BFEA16600A7DF59 /* MLHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLHeaderView.xib; sourceTree = "<group>"; };
+		1A08843B1BFEA1BC00A7DF59 /* MLFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLFooterView.h; sourceTree = "<group>"; };
+		1A08843C1BFEA1BC00A7DF59 /* MLFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFooterView.m; sourceTree = "<group>"; };
+		1A08843E1BFEA1DD00A7DF59 /* MLFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLFooterView.xib; sourceTree = "<group>"; };
 		1AFBE36F1BFE84AD00512116 /* group-purchase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "group-purchase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFBE3731BFE84AD00512116 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AFBE3751BFE84AD00512116 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +43,9 @@
 		1AFBE38D1BFE874400512116 /* tgs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tgs.plist; sourceTree = "<group>"; };
 		1AFBE38F1BFE87B800512116 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
 		1AFBE3901BFE87B800512116 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		1AFBE3921BFE931700512116 /* MLFoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLFoodCell.h; sourceTree = "<group>"; };
+		1AFBE3931BFE931700512116 /* MLFoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLFoodCell.m; sourceTree = "<group>"; };
+		1AFBE3941BFE931700512116 /* MLFoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLFoodCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +109,15 @@
 			isa = PBXGroup;
 			children = (
 				1AFBE37B1BFE84AD00512116 /* Main.storyboard */,
+				1A0884341BFEA14400A7DF59 /* MLHeaderView.h */,
+				1A0884351BFEA14400A7DF59 /* MLHeaderView.m */,
+				1A0884371BFEA16600A7DF59 /* MLHeaderView.xib */,
+				1AFBE3921BFE931700512116 /* MLFoodCell.h */,
+				1AFBE3931BFE931700512116 /* MLFoodCell.m */,
+				1AFBE3941BFE931700512116 /* MLFoodCell.xib */,
+				1A08843B1BFEA1BC00A7DF59 /* MLFooterView.h */,
+				1A08843C1BFEA1BC00A7DF59 /* MLFooterView.m */,
+				1A08843E1BFEA1DD00A7DF59 /* MLFooterView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -180,8 +204,11 @@
 			files = (
 				1AFBE3821BFE84AD00512116 /* LaunchScreen.storyboard in Resources */,
 				1AFBE38E1BFE874400512116 /* tgs.plist in Resources */,
+				1AFBE3961BFE931700512116 /* MLFoodCell.xib in Resources */,
 				1AFBE37F1BFE84AD00512116 /* Assets.xcassets in Resources */,
+				1A0884381BFEA16600A7DF59 /* MLHeaderView.xib in Resources */,
 				1AFBE37D1BFE84AD00512116 /* Main.storyboard in Resources */,
+				1A08843F1BFEA1DD00A7DF59 /* MLFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AFBE37A1BFE84AD00512116 /* ViewController.m in Sources */,
+				1A08843D1BFEA1BC00A7DF59 /* MLFooterView.m in Sources */,
 				1AFBE3911BFE87B800512116 /* Food.m in Sources */,
 				1AFBE3771BFE84AD00512116 /* AppDelegate.m in Sources */,
+				1AFBE3951BFE931700512116 /* MLFoodCell.m in Sources */,
+				1A0884361BFEA14400A7DF59 /* MLHeaderView.m in Sources */,
 				1AFBE3741BFE84AD00512116 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
