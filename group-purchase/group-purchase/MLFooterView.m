@@ -26,5 +26,11 @@
 
 - (IBAction)clickLoadMore:(id)sender {
     
+    //隐藏加载更多按钮
+    self.loadMore.hidden = YES;
+    self.loading.hidden = NO;
+    
+    
+    
 }
 @end
