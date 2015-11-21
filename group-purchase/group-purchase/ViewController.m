@@ -47,7 +47,17 @@
     
     
 //    刷新tableView
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
+    //获取indexPath
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.foods.count -1 inSection:0];
+    
+//    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    
+//    将新数据插入到tableView中
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
+
+//    数据刷新完毕后将数据显示在屏幕的最上方
+    [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
     
 }
 
