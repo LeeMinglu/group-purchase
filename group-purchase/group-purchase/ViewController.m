@@ -10,6 +10,7 @@
 #import "Food.h"
 #import "MLFoodCell.h"
 #import "MLFooterView.h"
+#import "MLHeaderView.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate, MLFooterViewDelegate>
 @property (nonatomic, strong) NSMutableArray *foods;
@@ -27,6 +28,9 @@
     
     MLFooterView *footerView = [MLFooterView footerView];
     self.tableView.tableFooterView = footerView;
+    
+    MLHeaderView *headerView = [MLHeaderView headerView];
+    self.tableView.tableHeaderView = headerView;
     
     footerView.delegate = self;
     
@@ -58,6 +62,8 @@
 
 //    数据刷新完毕后将数据显示在屏幕的最上方
     [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    
+
     
 }
 
@@ -96,7 +102,7 @@
 }
 
 
-#pragma mark --懒加载
+#pragma mark 懒加载
 - (NSMutableArray *)foods {
     if (_foods == nil) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"tgs.plist" ofType:nil];
