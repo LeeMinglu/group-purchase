@@ -10,4 +10,6 @@
 
 @interface MLFooterView : UIView
 
++ (instancetype)footerView;
+
 @end

@@ -8,14 +8,23 @@
 
 #import "MLFooterView.h"
 
+@interface MLFooterView ()
+
+@property (weak, nonatomic) IBOutlet UIButton *loadMore;
+
+
+@property (weak, nonatomic) IBOutlet UIView *loading;
+
+- (IBAction)clickLoadMore:(id)sender;
+@end
+
 @implementation MLFooterView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
++ (instancetype)footerView {
+    return [[[NSBundle mainBundle] loadNibNamed:@"MLFooterView" owner:nil options:nil] lastObject];
 }
-*/
 
+- (IBAction)clickLoadMore:(id)sender {
+    
+}
 @end

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Food.h"
 #import "MLFoodCell.h"
+#import "MLFooterView.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *foods;
@@ -23,6 +24,10 @@
     [super viewDidLoad];
     self.foodTableView.delegate = self;
     self.foodTableView.dataSource = self;
+    
+    MLFooterView *footerView = [MLFooterView footerView];
+    self.foodTableView.tableFooterView = footerView;
+    
 }
 
 
@@ -57,6 +62,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 90;
 }
+
 
 #pragma mark --懒加载
 - (NSArray *)foods {
